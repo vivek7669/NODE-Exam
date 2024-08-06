@@ -6,5 +6,4 @@ const dbconnector = async()=>{
         console.log("Database is connected.");
     }
 }
-
 module.exports = dbconnector;
