@@ -16,7 +16,7 @@ const taskmiddleware = (req,res,next)=>{
         next();
     }
     else{
-        res.status("401").send("Data Is Not Defined.");
+        res.status(401).send("Data Is Not Defined.");
     }
 }
 

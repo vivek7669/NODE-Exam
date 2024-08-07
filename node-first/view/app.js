@@ -12,7 +12,7 @@ const putuserdata = async(dataou)=> {
         console.log("User Registered");
         location.href = "./web/login.html";
     }
-    else{
+    else{   
         console.log("User Not Registered");
     }
 }
@@ -22,7 +22,7 @@ const getuserdata = (e) => {
     let udata = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
-        password: document.getElementById("pass").value,
+        password: document.getElementById("pass").value
     }
     putuserdata(udata);
 }

@@ -6,7 +6,7 @@ const getuser = async(req,res)=>{
 }
 const getuserbyid = async(req,res)=>{
     const { id } = req.params;
-    console.log(req.query.email);
+    // console.log(req.query.email);
     let data = await user.findById(id);
     res.send(data);
 }
