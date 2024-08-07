@@ -1,10 +1,12 @@
 const { Router } = require("express");
-const { getTasks, postTask, updateTask, deleteTask } = require("../controller/task_controller");
+const { getTasks, getTasksbyid , postTask, updateTask, deleteTask } = require("../controller/task_controller");
+const { taskmiddleware } = require("../middleware/user_middleware");
 
 const taskrouter = Router();
 
 taskrouter.get("/",getTasks);
-taskrouter.post("/",postTask);
+taskrouter.get("/:id",getTasksbyid);
+taskrouter.post("/",taskmiddleware,postTask);
 taskrouter.patch("/:id",updateTask);
 taskrouter.delete("/:id",deleteTask);
 

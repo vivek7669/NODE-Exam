@@ -1,6 +1,6 @@
 const {Router}  =  require('express');
 const { getuser, postuser ,updateuser, deleteuser, getuserbyid, getuserbyemail } = require('../controller/user_controller');
-const usermiddleware = require('../middleware/user_middleware');
+const {usermiddleware} = require('../middleware/user_middleware');
 
 const userroute = Router();
 

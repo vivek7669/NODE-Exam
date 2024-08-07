@@ -5,6 +5,12 @@ const getTasks = async (req, res) => {
     res.send(data);
 }
 
+const getTasksbyid = async(req,res)=> {
+    const {id} = req.params;
+    let data = await task.findById(id);
+    res.send(data)
+}
+
 const postTask = async (req, res) => {
     let data = await task.create(req.body);
     res.send(data);
@@ -22,4 +28,4 @@ const deleteTask = async (req, res) => {
     res.send(data);
 }
 
-module.exports = { getTasks, postTask, updateTask, deleteTask };
+module.exports = { getTasks, postTask, updateTask, deleteTask , getTasksbyid};
