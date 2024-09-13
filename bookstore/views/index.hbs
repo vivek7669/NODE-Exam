@@ -1,0 +1,57 @@
+{{!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container upperwraper d-flex justify-content-center align-items-center">
+        <div class="container  w-50">
+            <form action="/book/upload/" method="post" class="border rounded shadow p-4" enctype="multipart/form-data">
+                <input type="text" name="name" class="form-control mb-3 mx-auto " placeholder="Enter name ..."
+                    id="name">
+                <input type="password" name="password" class="form-control mb-3  mx-auto"
+                    placeholder="Enter password ..." id="password">
+                <input type="file" name="imgpath" placeholder="Enter file ..." class="form-control mb-3  mx-auto"
+                    id="imgpath">
+                <input type="submit" id="sub" value="Save" class="btn btn-success mx-auto float-end"><br>
+            </form>
+        </div>
+    </div>
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html> --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container upperwraper d-flex justify-content-center align-items-center">
+        <div class="container w-50">
+            <form action="/book/upload" method="post" class="border rounded shadow p-4" enctype="multipart/form-data">
+                <input type="text" name="name" class="form-control mb-3 mx-auto" placeholder="Enter name ..." id="name">
+                <input type="password" name="password" class="form-control mb-3 mx-auto" placeholder="Enter password ..." id="password">
+                <input type="file" name="imgpath" class="form-control mb-3 mx-auto" id="imgpath">
+                <input type="submit" id="sub" value="Save" class="btn btn-success mx-auto float-end"><br>
+            </form>
+        </div>
+    </div>
+    <script src="/jquery/jquery.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
