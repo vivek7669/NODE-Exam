@@ -1,5 +1,6 @@
 const book = require("../model/bookschema");
 const multer = require("multer");
+ 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, "upload"); // Ensure this directory exists
@@ -15,7 +16,7 @@ const getdata = async(req,res) => {
     res.send(datas);
 } 
 const savedata = async(req,res) => {
-    const body = await req.body;
+    console.log(req.body);
     console.log(req.file);
     
     // res.send(datas);
@@ -23,3 +24,5 @@ const savedata = async(req,res) => {
 } 
 
 module.exports = {getdata,savedata,upload}
+
+
